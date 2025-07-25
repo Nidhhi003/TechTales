@@ -41,7 +41,7 @@ body {
 
 /* Hero Section - Section 1 */
 .section-1 {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #f7cbca 0%, #764ba2 100%);
     min-height: 100vh;
     color: white;
     position: relative;
@@ -99,7 +99,7 @@ body {
     left: 0;
     right: 0;
     height: 2px;
-    background: green;
+    background: #764ba2;
     border-radius: 1px;
 }
 
@@ -134,7 +134,7 @@ body {
     padding: 12px 24px;
     border: 1px solid rgba(0, 0, 0, 0.979);
     border-radius: 25px;
-    background-color: #3b82f6;
+    background-color: #764ba2;
     color: white;
     font-weight: 500;
     cursor: pointer;
@@ -143,8 +143,8 @@ body {
 }
 
 .btn-outline-success:hover {
-    background: #3b82f6;
-    border-color: #5f96ed;
+    background: #9a62d2b1;
+    border-color:#9a62d2b1;
     transform: translateY(-2px);
 }
 
@@ -228,7 +228,7 @@ body {
 
 .section-2-button {
     padding: 16px 32px;
-    background: var(--accent-color);
+    background: #764ba2;
     color: white;
     border: none;
     border-radius: 50px;
@@ -240,7 +240,7 @@ body {
 }
 
 .section-2-button:hover {
-    background: #2563eb;
+    background: #915ec4e6;
     transform: translateY(-2px);
     box-shadow: 0 10px 25px rgba(59, 130, 246, 0.3);
 }
@@ -384,7 +384,7 @@ body {
 .box-1:hover {
     transform: translateY(-5px);
     box-shadow: var(--shadow-lg);
-    border-color: var(--accent-color);
+    border-color: #764ba2;
 }
 
 .box-img-container {
@@ -394,7 +394,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: var(--accent-color);
+    background: #764ba2;
     border-radius: 12px;
     color: white;
 }
@@ -412,7 +412,7 @@ body {
 
 .icon-desc {
     font-size: 14px;
-    color: var(--text-secondary);
+    color: black;
     line-height: 1.5;
 }
 
@@ -510,7 +510,7 @@ body {
 }
 
 .post-category {
-    background: var(--accent-color);
+    background: #764ba2;
     color: white;
     padding: 4px 12px;
     border-radius: 20px;
@@ -599,12 +599,12 @@ body {
 }
 
 .btn-primary {
-    background: var(--accent-color);
+    background: #764ba2;
     color: white;
 }
 
 .btn-primary:hover {
-    background: #2563eb;
+    background: #8e5ac2d5;
     transform: translateY(-1px);
 }
 

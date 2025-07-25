@@ -2,11 +2,10 @@ TechTales is a minimal and stylish blog website built using Vite, JavaScript, an
 It serves as a lightweight frontend-only blog platform that showcases blog posts with featured images, author details, and categories.
 
 ### Features
-1. Displays a list of predefined blog posts.
-2. Beautiful UI styled with Tailwind CSS.
-3. Category-based blog filtering.
-4. Clean and responsive design.
-5. Powered by Vite for fast build and development
+1. Beautiful UI styled with Tailwind CSS.
+2. Category-based blog filtering.
+3. Clean and responsive design.
+4. Powered by Vite for fast build and development
 
 ### Tech Stack
 1. Frontend Framework: Vite

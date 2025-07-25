@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>techtales - Learn Today's Most In-Demand Skills</title>
+    <meta name="description" content="Discover the latest insights in technology, innovation, and digital transformation">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Hero Section -->
+    <section class="section-1">
+        <nav class="navbar-bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand">TechTales</a>
+                <div class="nav-links">
+                    <a href="#" class="nav-link active" data-page="home">Home</a>
+                    <a href="#" class="nav-link" data-page="about">About</a>
+                    <a href="#" class="nav-link" data-page="contact">Contact</a>
+                    <a href="#" class="nav-link" data-page="admin">Admin</a>
+                </div>
+                <form class="d-flex" role="search">
+                    <input class="form-control-me-2" type="search" placeholder="Search posts..." id="searchInput">
+                    <button class="btn-outline-success" type="submit" id="searchBtn">Search</button>
+                </form>
+            </div>
+        </nav>
+        
+        <div class="main-box">
+            <h1 class="welcome">Learn today's most <span>in-demand skills</span></h1>
+            <p style="font-size: 26px; font-family: Arial, Helvetica, sans-serif;">
+                Discover cutting-edge insights in technology, development, and digital innovation through our comprehensive blog posts
+            </p>
+            
+            <div class="section-1-img">
+                <img src="https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=800"
+                class="women" alt="Learning Technology">
+            </div>
+        </div>
+    </section>
+
+    <!-- Pages Container -->
+    <div id="pagesContainer">
+        <!-- Home Page -->
+        <div id="homePage" class="page active">
+            <!-- Featured Posts Section -->
+            <section class="section-2">
+                <div class="main-box-2">
+                    <div class="box-2-titles">
+                        <h3 class="lets-begin-today">Building strong foundational skills</h3>
+                        <p class="lets-begin-today-para">
+                            Explore our curated collection of articles covering the latest trends in web development, 
+                            AI, cloud computing, and digital transformation strategies.
+                        </p>
+                        <button class="section-2-button" onclick="scrollToFeaturedPosts()">Explore here!</button>   
+                    </div>
+                    <img src="https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg?auto=compress&cs=tinysrgb&w=800"
+                    class="section-2-img" alt="Technology Learning">
+                </div>
+            </section>
+
+            <!-- Featured Posts Grid -->
+            <section class="last" id="featuredPosts">
+                <div class="last-sec-desc">
+                    <h3 class="last-sec-h3">Learn latest Skills; Advance your knowledge</h3>
+                    <p class="last-sec-p">Stay updated with the most recent developments in technology and programming</p>
+                </div>
+                <div class="posts-grid" id="postsGrid">
+                    <!-- Posts will be dynamically loaded here -->
+                </div>
+            </section>
+
+            <!-- Categories Section -->
+            <section class="boxes">
+                <div class="box-1" onclick="filterByCategory('Technology')">
+                    <div class="box-img-container">
+                        <svg width="50" height="50" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                            <line x1="8" y1="21" x2="16" y2="21"></line>
+                            <line x1="12" y1="17" x2="12" y2="21"></line>
+                        </svg>
+                    </div>
+                    <div class="box-1-content">
+                        <h3 class="icon-name">Technology</h3>
+                        <p class="icon-desc">Latest trends and innovations in tech</p>
+                    </div>
+                </div>
+
+                <div class="box-1" onclick="filterByCategory('Development')">
+                    <div class="box-img-container">
+                        <svg width="50" height="50" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="16,18 22,12 16,6"></polyline>
+                            <polyline points="8,6 2,12 8,18"></polyline>
+                        </svg>
+                    </div>
+                    <div class="box-1-content">
+                        <h3 class="icon-name">Development</h3>
+                        <p class="icon-desc">Programming tutorials and best practices</p>
+                    </div>
+                </div>
+
+                <div class="box-1" onclick="filterByCategory('Design')">
+                    <div class="box-img-container">
+                        <svg width="50" height="50" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="m2 7 4.41-4.41A2 2 0 0 1 7.83 2h8.34a2 2 0 0 1 1.42.59L22 7"></path>
+                            <path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"></path>
+                            <path d="M15 22v-4a2 2 0 0 0-2-2h-2a2 2 0 0 0-2 2v4"></path>
+                            <path d="M2 7h20"></path>
+                        </svg>
+                    </div>
+                    <div class="box-1-content">
+                        <h3 class="icon-name">Design</h3>
+                        <p class="icon-desc">UX/UI design principles and trends</p>
+                    </div>
+                </div>
+
+                <div class="box-1" onclick="filterByCategory('Business')">
+                    <div class="box-img-container">
+                        <svg width="50" height="50" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
+                            <path d="m2 17 10 5 10-5"></path>
+                            <path d="m2 12 10 5 10-5"></path>
+                        </svg>
+                    </div>
+                    <div class="box-1-content">
+                        <h3 class="icon-name">Business</h3>
+                        <p class="icon-desc">Digital transformation strategies</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Trusted By Section -->
+            <section class="section-3">
+                <div class="main-box-3">
+                    <h3 style="color: rgb(171, 168, 168);">TRUSTED BY DEVELOPERS WORLDWIDE</h3><br>
+                    <div class="logo">
+                        <svg width="120" height="40" viewBox="0 0 120 40" fill="#999">
+                            <text x="10" y="25" font-family="Arial" font-size="16" font-weight="bold">GitHub</text>
+                        </svg>
+                        <svg width="120" height="40" viewBox="0 0 120 40" fill="#999">
+                            <text x="10" y="25" font-family="Arial" font-size="16" font-weight="bold">Stack Overflow</text>
+                        </svg>
+                        <svg width="120" height="40" viewBox="0 0 120 40" fill="#999">
+                            <text x="10" y="25" font-family="Arial" font-size="16" font-weight="bold">Medium</text>
+                        </svg>
+                        <svg width="120" height="40" viewBox="0 0 120 40" fill="#999">
+                            <text x="10" y="25" font-family="Arial" font-size="16" font-weight="bold">Dev.to</text>
+                        </svg>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Post Detail Page -->
+        <div id="postPage" class="page">
+            <div class="container">
+                <article class="post-detail" id="postDetail">
+                    <!-- Post content will be dynamically loaded here -->
+                </article>
+            </div>
+        </div>
+
+        <!-- Admin Page -->
+        <div id="adminPage" class="page">
+            <div class="container">
+                <div class="admin-header">
+                    <h2>Admin Dashboard</h2>
+                    <button class="btn btn-primary" id="newPostBtn">New Post</button>
+                </div>
+                
+                <div class="admin-content">
+                    <div class="posts-list" id="adminPostsList">
+                        <!-- Admin posts list will be loaded here -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- About Page -->
+        <div id="aboutPage" class="page">
+            <div class="container">
+                <div class="about-content">
+                    <h2>About TechTales</h2>
+                    <p>Welcome to TechTales, your premier destination for insights into the world of technology and innovation. We cover everything from emerging trends to practical development tips.</p>
+                    <p>Our mission is to provide valuable, actionable content that helps developers, entrepreneurs, and tech enthusiasts stay ahead of the curve.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Contact Page -->
+        <div id="contactPage" class="page">
+            <div class="container">
+                <div class="contact-content">
+                    <h2>Contact Us</h2>
+                    <p>Have a question or want to contribute? We'd love to hear from you.</p>
+                    <div class="contact-info">
+                        <p><strong>Email:</strong> hello@techtales.com</p>
+                        <p><strong>Twitter:</strong> @techtales</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Post Editor Modal -->
+    <div id="postModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 id="modalTitle">Create New Post</h3>
+                <button class="modal-close" id="closeModal">&times;</button>
+            </div>
+            <form id="postForm" class="post-form">
+                <div class="form-group">
+                    <label for="postTitle">Title</label>
+                    <input type="text" id="postTitle" required>
+                </div>
+                <div class="form-group">
+                    <label for="postAuthor">Author</label>
+                    <input type="text" id="postAuthor" required>
+                </div>
+                <div class="form-group">
+                    <label for="postCategory">Category</label>
+                    <select id="postCategory" required>
+                        <option value="">Select Category</option>
+                        <option value="Technology">Technology</option>
+                        <option value="Development">Development</option>
+                        <option value="Design">Design</option>
+                        <option value="Business">Business</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="postImage">Featured Image URL</label>
+                    <input type="url" id="postImage" placeholder="https://images.pexels.com/...">
+                </div>
+                <div class="form-group">
+                    <label for="postExcerpt">Excerpt</label>
+                    <textarea id="postExcerpt" rows="3" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="postContent">Content</label>
+                    <textarea id="postContent" rows="10" required></textarea>
+                </div>
+                <div class="form-actions">
+                    <button type="button" class="btn btn-secondary" id="cancelBtn">Cancel</button>
+                    <button type="submit" class="btn btn-primary">Save Post</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
